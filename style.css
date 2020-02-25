@@ -1,0 +1,23 @@
+/* 
+
+font-family: 'Roboto', ;
+font-family: 'Montserrat', ;
+primary-color #2B2E34 - gray
+secondary-color #021371 - darkblue
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.section {
+    background-color: #fff;
+}
+.section h3 {
+    background-color: #2B2E34;
+    color: #fff;
+}
+.section:nth-child(even) {
+    background: #F4F4F4;
+}
