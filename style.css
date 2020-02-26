@@ -10,7 +10,27 @@ secondary-color #021371 - darkblue
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
+.container {
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.first-row {
+    height: 508px;
+    background-color: #021371;
+    padding: 100px 40px 10px 40px;
+    
+}
+.first-row h1{
+    font-size: 2.5em;
+    color: #fff;
+}
+
 .section {
     background-color: #fff;
 }
@@ -20,4 +40,33 @@ secondary-color #021371 - darkblue
 }
 .section:nth-child(even) {
     background: #F4F4F4;
+}
+
+footer {
+    background-color: #021371;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color: #fff;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        width: 90vw;
+    }
+}
+@media screen and (min-width: 992px){
+    .container{
+        width: 90vw;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1080px;
+    }
 }
