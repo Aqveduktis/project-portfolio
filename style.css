@@ -32,15 +32,43 @@ secondary-color #021371 - darkblue
 }
 
 .section {
+    padding-top: 40px;
     background-color: #fff;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .section h3 {
     background-color: #2B2E34;
     color: #fff;
+    font-size: 1.5em;
+    padding: 0.5em 0.7em;
 }
+.section h4 {
+    font-size: 1.5em;
+    align-self: center;
+}
+
 .section:nth-child(even) {
     background: #F4F4F4;
 }
+.tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.tags p {
+    color: #2B2E34;
+    font-size: 9px;
+    font-family: "Roboto", sans-serif;
+    background-color: #FDDFE7;
+    padding: 0.5em 1em;
+
+    
+
+}
+
 
 footer {
     background-color: #021371;
