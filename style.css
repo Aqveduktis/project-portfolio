@@ -23,42 +23,54 @@ secondary-color #021371 - darkblue
 .first-row {
     height: 508px;
     background-color: #021371;
+    background-image: url(pictures/industry%20gray.jpg);
+    background-size: cover;
     padding: 100px 40px 0px 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     
 }
 .row-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+     color: #fff;
 }
 .row-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.icon-first {
+    background-color: #222;
+}
 
 .a-circle {
-    width: 333px;
-    height: 333px;
-    background-color: coral;
+    width: 250px;
+    height: 250px;
     position: relative;
 }
 
 .a-circle img {
-    width: 333px;
-    height: 333px;
+    background-color: #222;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: 2px solid #fff;
     position: absolute;
     bottom: -20px;
+    right: 20px;
 }
 
 .first-row h1{
+    font-size: 3.5em;
+    max-width: 40%;
+}
+.first-row h2{
     font-size: 2.5em;
-    color: #fff;
+    
 }
 .second-row {
     background: #F4F4F4;
@@ -156,6 +168,28 @@ footer p{
     .container{
         width: 90vw;
     }
+    .first-row {
+    height: 508px;
+    background-color: #021371;
+    background-image: url(pictures/industry%20gray.jpg);
+    background-size: cover;
+    padding: 100px 40px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.row-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     color: #fff;
+}
+.row-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 }
 @media screen and (min-width: 1200px){
     .container{
