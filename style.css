@@ -22,34 +22,57 @@ secondary-color #021371 - darkblue
 }
 .first-row {
     height: 508px;
+    color: #fff;
     background-color: #021371;
     background-image: url(pictures/industry%20gray.jpg);
     background-size: cover;
-    padding: 100px 40px 0px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: end; 
+    align-items: end;
+}
+.name {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: start;
+    max-width: 100%;
     
 }
-.row-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-     color: #fff;
-}
-.row-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 .icon-first {
-    background-color: #222;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    justify-items: start;
+   
+}
+.icon-first a:nth-child(1) {
+    grid-column-start: 2;
+    
+}
+.icon-first a:nth-child(2) {
+    grid-column-start: 3;
+    
+}
+.icon-first a:nth-child(3) {
+    grid-column-start: 4;
+    
 }
 
 .a-circle {
     width: 250px;
     height: 250px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
     position: relative;
 }
 
@@ -69,7 +92,7 @@ secondary-color #021371 - darkblue
     max-width: 40%;
 }
 .first-row h2{
-    font-size: 2.5em;
+    font-size: 2em;
     
 }
 .second-row {
@@ -163,33 +186,87 @@ footer p{
     .container{
         width: 90vw;
     }
+    .first-row {
+        height: 508px;
+        color: #fff;
+        background-color: #021371;
+        background-image: url(pictures/industry%20gray.jpg);
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: end; 
+        align-items: end;
+    }
+    .name {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        align-self: start;
+        max-width: 100%;
+        
+    }
+    
+    .icon-first {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: stretch;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        justify-items: start;
+       
+    }
+    .icon-first a:nth-child(1) {
+        grid-column-start: 2;
+        
+    }
+    .icon-first a:nth-child(2) {
+        grid-column-start: 3;
+        
+    }
+    .icon-first a:nth-child(3) {
+        grid-column-start: 4;
+        
+    }
+    
+    .a-circle {
+        width: 250px;
+        height: 250px;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        position: relative;
+    }
+    
+    .a-circle img {
+        background-color: #222;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        position: absolute;
+        bottom: -20px;
+        right: 20px;
+    }
+    
+    .first-row h1{
+        font-size: 3.5em;
+        max-width: 40%;
+    }
+    .first-row h2{
+        font-size: 2em;
+        
+    }
 }
 @media screen and (min-width: 992px){
     .container{
         width: 90vw;
     }
-    .first-row {
-    height: 508px;
-    background-color: #021371;
-    background-image: url(pictures/industry%20gray.jpg);
-    background-size: cover;
-    padding: 100px 40px 0px 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-.row-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-     color: #fff;
-}
-.row-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 }
 @media screen and (min-width: 1200px){
     .container{
