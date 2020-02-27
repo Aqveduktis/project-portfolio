@@ -11,6 +11,7 @@ secondary-color #021371 - darkblue
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 .container {
     width: 100vw;
@@ -44,23 +45,33 @@ secondary-color #021371 - darkblue
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    justify-items: start;
-   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
 }
+.icon-first a{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.icon-first img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+/* 
+Insert Comment 
 .icon-first a:nth-child(1) {
-    grid-column-start: 2;
-    
+    grid-column-start: 2;   
 }
-.icon-first a:nth-child(2) {
-    grid-column-start: 3;
-    
-}
-.icon-first a:nth-child(3) {
-    grid-column-start: 4;
-    
-}
+*/
+
 
 .a-circle {
     width: 150px;
@@ -183,16 +194,8 @@ footer p{
         width: 90vw;
     }
     .first-row {
-        height: 508px;
-        color: #fff;
-        background-color: #021371;
-        background-image: url(pictures/industry%20gray.jpg);
-        background-size: cover;
-        display: grid;
         grid-template-columns: 1fr 2fr 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        justify-items: end; 
-        align-items: end;
     }
     .name {
         grid-column-start: 2;
@@ -215,6 +218,8 @@ footer p{
         justify-items: start;
        
     }
+    
+    
     .icon-first a:nth-child(1) {
         grid-column-start: 2;
         
@@ -262,6 +267,17 @@ footer p{
     .container{
         width: 90vw;
     }
+    .icon-first a{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+
+}
+.icon-first img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
     .a-circle {
         width: 250px;
         height: 250px;
