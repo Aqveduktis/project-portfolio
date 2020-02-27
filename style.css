@@ -229,8 +229,8 @@ footer p{
     }
     
     .a-circle {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 3;
@@ -240,8 +240,8 @@ footer p{
     
     .a-circle img {
         background-color: #222;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         border: 2px solid #fff;
         position: absolute;
@@ -250,11 +250,11 @@ footer p{
     }
     
     .first-row h1{
-        font-size: 3.5em;
+        font-size: 3em;
         max-width: 40%;
     }
     .first-row h2{
-        font-size: 2em;
+        font-size: 1.7em;
         
     }
 }
@@ -262,7 +262,26 @@ footer p{
     .container{
         width: 90vw;
     }
+    .a-circle {
+        width: 250px;
+        height: 250px;
+        
+    }
+    
+    .a-circle img {
+        width: 250px;
+        height: 250px;
+    
+    }
 
+    .first-row h1{
+        font-size: 3.5em;
+        max-width: 40%;
+    }
+    .first-row h2{
+        font-size: 2em;
+        
+    }
 }
 @media screen and (min-width: 1200px){
     .container{
