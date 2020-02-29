@@ -132,17 +132,23 @@ Insert Comment
     background: #F4F4F4;
 }
 .important{
-    width: 57%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-.important article {
-    width: 40%;
+.important a {
+    width: 80%;
     height: auto;
+    display: none;
 }
+.important a:nth-child(1){
+    display: block;
+}
+
+
 .proj-title {
     background-image: url("pictures/FAQ-design.png");
     background-size: cover;
@@ -297,6 +303,10 @@ footer p{
     .first-row h2{
         font-size: 2em;
         
+    }
+    .important a{
+        display: block;
+        width: 40%;
     }
 }
 @media screen and (min-width: 1200px){
