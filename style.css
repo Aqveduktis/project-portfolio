@@ -13,6 +13,10 @@ secondary-color #021371 - darkblue
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+a:focus {
+    border: 2px solid crimson;
+}
+
 .container {
     width: 100vw;
     margin-left: auto;
@@ -51,19 +55,21 @@ secondary-color #021371 - darkblue
     
 }
 .icon-first a{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+   
+}
+.icon-first div {
+    width: 100%;
+    height: 100%;
     padding: 5px;
     border: 2px solid #fff;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
 }
 .icon-first img {
-    width: 80%;
-    height: 80%;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    
 }
 /* 
 Insert Comment 
@@ -122,6 +128,7 @@ Insert Comment
     font-size: 1.5em;
     padding: 0.5em 0.7em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .section h4 {
     font-size: 1.5em;
@@ -141,8 +148,10 @@ Insert Comment
 }
 .important a {
     width: 80%;
+    text-decoration: none;
     height: auto;
     display: none;
+    
 }
 .important a:nth-child(1){
     display: block;
@@ -155,9 +164,24 @@ Insert Comment
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 300px;
+    height: 150px;
     color: #021371;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+}
+.proj-title div{
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .tags {
@@ -180,6 +204,20 @@ Insert Comment
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.second-icon {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.second-icon img {
+    width: 100%;
+    height: 100%;
 }
 
 footer {
@@ -238,6 +276,13 @@ footer p{
         grid-column-start: 4;
         
     }
+        .icon-first div {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
     
     .a-circle {
         width: 200px;
@@ -276,14 +321,10 @@ footer p{
     .icon-first a{
     width: 50px;
     height: 50px;
-    padding: 7px;
+    
 
 }
-.icon-first img {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-}
+
     .a-circle {
         width: 250px;
         height: 250px;
@@ -304,9 +345,34 @@ footer p{
         font-size: 2em;
         
     }
+    .important {
+        display: grid;
+        grid-template-columns: 3fr 4fr 4fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+
     .important a{
         display: block;
-        width: 40%;
+        width: 100%;
+    }
+    .important a:nth-child(1){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+      .important a:nth-child(2){
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+      .important a:nth-child(3){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+      .important a:nth-child(4){
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
 }
 @media screen and (min-width: 1200px){
