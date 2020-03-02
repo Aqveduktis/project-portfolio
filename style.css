@@ -114,19 +114,51 @@ Insert Comment
     display: flex;
     align-items: center;
 }
+/* .word {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+.dekoration {
+    max-width: 80px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+}
+
+
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: #2B2E34;
+   
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #2B2E34;
+}
+.empty {
+    clear: both;
+}
+
 .section {
-    padding-top: 40px;
     background-color: #fff;
     min-height: 200px;
+    
+}
+.inner-section {
+    width: 90%;
+    margin: 40px auto;
+    background-color: #666;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.inner-section{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #444;
 }
 .section h3 {
     background-color: #2B2E34;
