@@ -156,7 +156,9 @@ Insert Comment
 .important a:nth-child(1){
     display: block;
 }
-
+.important a:hover {
+    border: 2px solid crimson;
+}
 
 .proj-title {
     background-image: url("pictures/FAQ-design.png");
@@ -177,11 +179,29 @@ Insert Comment
     height: 100%;
     background: #333;
     opacity: 0.5;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+.important p{
+    color: black;
+    display: inline;
+}
+.proj-title p{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.proj-name {
+    color: #021371;
+    text-transform: uppercase;
+}
+.arrow {
+    color: #021371;
+    text-decoration: underline;
 }
 
 .tags {
