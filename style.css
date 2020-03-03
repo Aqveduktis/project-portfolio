@@ -13,6 +13,9 @@ secondary-color #021371 - darkblue
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+}
 a:focus {
     border: 2px solid crimson;
 }
@@ -60,15 +63,20 @@ a:focus {
    
 }
 .icon-first div {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     padding: 5px;
+    margin: auto;
     border: 2px solid #fff;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon-first img {
-    width: 100%;
-    height: 100%;
+    width: 55%;
+    height: 55%;
+    margin: auto;
     
 }
 /* 
@@ -271,6 +279,8 @@ Insert Comment
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
 }
 .thought article {
     width: 90%;
@@ -292,18 +302,68 @@ Insert Comment
     justify-content: space-between;
 }
 
+/* .icon-first a{
+    width: 60px;
+    height: 60px;
+   
+}
+.icon-first div {
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-first img {
+    width: 55%;
+    height: 55%;
+    margin: auto;
+    
+} */
+
+
 .second-icon {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
 }
+.second-icon a{
+    width: 100px;
+    height: 150px;
+    color: #2B2E34;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.second-icon div{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    border: 2px solid #2B2E34;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .second-icon img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
+}
+.second-icon p{
+    font-weight: bold;
+    text-transform: uppercase;
+    
 }
 
 footer {
@@ -363,11 +423,8 @@ footer p{
         
     }
         .icon-first div {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    border: 2px solid #fff;
-    border-radius: 50%;
+    
+  
 }
     
     .a-circle {
@@ -403,6 +460,13 @@ footer p{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .thought {
+        justify-content: space-between;
+    }
+    .thought article {
+        width: 45%;
+        justify-content: space-between;
     }
     .thought article:nth-child(2) {
         display: flex;
