@@ -160,10 +160,12 @@ Insert Comment
     min-height: 200px;
     
 }
+.section:nth-child(odd) {
+    background: #F4F4F4;
+}
 .inner-section {
     width: 90%;
     margin: 40px auto;
-    background-color: #666;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,9 +183,7 @@ Insert Comment
     align-self: center;
 }
 
-.section:nth-child(odd) {
-    background: #F4F4F4;
-}
+
 .important{
     margin-left: auto;
     margin-right: auto;
@@ -207,7 +207,8 @@ Insert Comment
 }
 
 .proj-title {
-    background-image: url("pictures/FAQ-design.png");
+    background-color: #021371;
+    background-image: url("#");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -220,6 +221,18 @@ Insert Comment
     align-items: center;
     overflow: hidden;
 }
+
+.important a:nth-child(1) .proj-title {
+    background-image: url("pictures/clock.png");
+}
+
+.important a:nth-child(2) .proj-title {
+    background-image: url("pictures/pizza.png");
+}
+.important a:nth-child(3) .proj-title {
+    background-image: url("pictures/FAQ-design.png");
+}
+
 .proj-title div{
     width: 100%;
     height: 100%;
@@ -250,31 +263,55 @@ Insert Comment
     text-decoration: underline;
 }
 
-.tags {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.tags p {
-    color: #2B2E34;
-    font-size: 9px;
-    font-family: "Roboto", sans-serif;
-    background-color: #FDDFE7;
-    padding: 0em 0.5em;
 
-    
-
+.non-important h4{
+   text-align: center;
+   margin: 40px 0px;
 }
-.non-important {
+.links {
+   
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    margin: 40px 0px;
+    align-items: flex-start;
 }
-.non-important a{
-    padding: 20px 0px;
+.links a{
+    padding: 10px 0px;
+   
+    
 }
+.links p{
+    color: black;
+    margin: 10px 0;
+}
+.links span{
+    color: #2B2E34;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+.descp {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.descp span{
+    text-decoration-color: #2B2E34;
+}
+.tags {
+    color: #2B2E34;
+    font-size: 0.7em;
+    font-family: "Roboto", sans-serif;
+
+}
+.tags span {
+   
+    background-color: #FDDFE7;
+    padding: 0em 0.5em;
+   
+  
+
+}
+
 .thought{
     display: flex;
     flex-direction: row;
@@ -282,48 +319,36 @@ Insert Comment
     justify-content: center;
     align-items: space-between;
 }
-.thought article {
+.thought a {
     width: 90%;
+    text-decoration: none;
+    color: #2B2E34;
+
 }
-.thought article:nth-child(2){
+.thought a:nth-child(2){
     display: none;
 }
 
 .thought img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
 }
 
 .mylist {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
+    align-items: flex-start;
+}
+.mylist ul  {
+    list-style-type: none;
+    padding: 1em;
+    max-width: 45%;
 }
 
-/* .icon-first a{
-    width: 60px;
-    height: 60px;
-   
-}
-.icon-first div {
-    width: 90%;
-    height: 90%;
-    padding: 5px;
-    margin: auto;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon-first img {
-    width: 55%;
-    height: 55%;
-    margin: auto;
-    
-} */
 
 
 .second-icon {
@@ -336,8 +361,8 @@ Insert Comment
     align-items: flex-end;
 }
 .second-icon a{
-    width: 100px;
-    height: 150px;
+    width: 60px;
+    height: 70px;
     color: #2B2E34;
     text-decoration: none;
     display: flex;
@@ -361,8 +386,10 @@ Insert Comment
     height: 50%;
 }
 .second-icon p{
+    font-size: 0.6em;
     font-weight: bold;
     text-transform: uppercase;
+    
     
 }
 
@@ -461,18 +488,22 @@ footer p{
         margin-left: auto;
         margin-right: auto;
     }
-    .thought {
-        justify-content: space-between;
+    
+.mylist {
+    width: 80%;
+
+}
+.mylist ul{
+    max-width: 22%;
+}
+    .second-icon a{
+        width: 100px;
+        height: 150px;
     }
-    .thought article {
-        width: 45%;
-        justify-content: space-between;
+    .second-icon p{
+        font-size: 1em;
     }
-    .thought article:nth-child(2) {
-        display: flex;
-        flex-direction: column;
-        
-    }
+ 
 }
 @media screen and (min-width: 992px){
     .container{
@@ -523,9 +554,21 @@ footer p{
         display: block;
         width: 100%;
     }
-    .thought article {
-        width: 40%;
+  
+    .thought {
+        justify-content: space-between;
     }
+    .thought a {
+        width: 45%;
+        justify-content: space-between;
+    }
+    .thought a:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+  
   
 }
 @media screen and (min-width: 1200px){
