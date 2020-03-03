@@ -47,8 +47,17 @@ a:focus {
     max-width: 100%;
     
 }
+.name p{
+    font-size: 1.2em;
+}
+
+.name span{
+    font-weight: bold;
+}
 
 .icon-first {
+    margin-left: auto;
+    width: 90%;
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: stretch;
@@ -142,14 +151,14 @@ Insert Comment
 .line {
     width: 50px;
     height: 3px;
-    background-color: #2B2E34;
+    background-color: #021371;
    
 }
 .circle {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #2B2E34;
+    background-color: #021371;
 }
 .empty {
     clear: both;
@@ -171,7 +180,7 @@ Insert Comment
     align-items: center;
 }
 .section h3 {
-    background-color: #2B2E34;
+    background-color: #021371;
     color: #fff;
     font-size: 1.5em;
     padding: 0.5em 0.7em;
@@ -181,6 +190,8 @@ Insert Comment
 .section h4 {
     font-size: 1.5em;
     align-self: center;
+    color: #021371;
+    text-transform: uppercase;
 }
 
 
@@ -202,9 +213,7 @@ Insert Comment
 .important a:nth-child(1){
     display: block;
 }
-.important a:hover {
-    border: 2px solid crimson;
-}
+
 
 .proj-title {
     background-color: #021371;
@@ -285,7 +294,7 @@ Insert Comment
     margin: 10px 0;
 }
 .links span{
-    color: #2B2E34;
+    color: #021371;
     text-transform: uppercase;
     font-weight: bold;
    
@@ -295,7 +304,8 @@ Insert Comment
     text-decoration-color: black;
 }
 .descp span{
-    text-decoration-color: #2B2E34;
+    
+    text-decoration-color: #021371;
 }
 .tags {
     color: #2B2E34;
@@ -304,7 +314,7 @@ Insert Comment
 
 }
 .tags span {
-   
+    color: #2B2E34; 
     background-color: #FDDFE7;
     padding: 0em 0.5em;
    
@@ -374,7 +384,7 @@ Insert Comment
     width: 90%;
     height: 90px;
     margin: auto;
-    border: 2px solid #2B2E34;
+    border: 2px solid #021371;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -389,12 +399,13 @@ Insert Comment
     font-size: 0.6em;
     font-weight: bold;
     text-transform: uppercase;
+    color: #021371;
     
     
 }
 
 footer {
-    background-color: #021371;
+    background-color: #2B2E34;
     height: 200px;
     display: flex;
     flex-direction: column;
