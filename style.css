@@ -257,6 +257,34 @@ Insert Comment
     
 
 }
+.non-important {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+.non-important a{
+    padding: 20px 0px;
+}
+.thought{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.thought article {
+    width: 90%;
+}
+.thought article:nth-child(2){
+    display: none;
+}
+
+.thought img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
 .mylist {
     width: 80%;
     display: flex;
@@ -376,6 +404,11 @@ footer p{
         margin-left: auto;
         margin-right: auto;
     }
+    .thought article:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 @media screen and (min-width: 992px){
     .container{
@@ -425,6 +458,9 @@ footer p{
     .important a{
         display: block;
         width: 100%;
+    }
+    .thought article {
+        width: 40%;
     }
   
 }
