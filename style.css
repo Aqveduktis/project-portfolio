@@ -358,6 +358,11 @@ Insert Comment
     padding: 1em;
     max-width: 45%;
 }
+ul p{
+    color: #021371;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 
 
