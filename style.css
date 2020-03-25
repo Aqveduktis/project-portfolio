@@ -207,12 +207,10 @@ Insert Comment
     width: 80%;
     text-decoration: none;
     height: auto;
-    display: none;
+    padding-bottom: 1em;
     
 }
-.important a:nth-child(1){
-    display: block;
-}
+
 
 
 .proj-title {
@@ -230,6 +228,12 @@ Insert Comment
     align-items: center;
     overflow: hidden;
 }
+.important .proj-title{
+    display: none;
+}
+.important .proj-title:nth-child(1){
+    display: block;
+}
 
 .important a:nth-child(1) .proj-title {
     background-image: url("pictures/clock.png");
@@ -237,9 +241,11 @@ Insert Comment
 
 .important a:nth-child(2) .proj-title {
     background-image: url("pictures/pizza.png");
+    display: none;
 }
 .important a:nth-child(3) .proj-title {
     background-image: url("pictures/FAQ-design.png");
+    display: none;
 }
 
 .proj-title div{
@@ -500,9 +506,33 @@ footer p{
         
     }
     .inner-section{
-        width: 80%;
+        width: 85%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .important a:nth-child(1) .proj-title {
+        background-image: url("pictures/clock.png");
+    }
+    
+    .important a:nth-child(2) .proj-title {
+        display: block;
+    }
+    .important a:nth-child(3) .proj-title {
+        display: block;
+    }
+    .important {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+
+    .important a{
+        display: block;
+        width: 100%;
+        
     }
     
 .mylist {
@@ -557,7 +587,7 @@ footer p{
         margin-left: auto;
         margin-right: auto;
     }
-    .important {
+    /* .important {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -569,7 +599,9 @@ footer p{
     .important a{
         display: block;
         width: 100%;
-    }
+    } */
+
+
   
     .thought {
         justify-content: space-between;
