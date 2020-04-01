@@ -40,11 +40,16 @@ a:focus {
     justify-items: end; 
     align-items: end;
 }
+.first-row h1{
+    text-shadow: 1px black;
+}
+
 .name {
     grid-row-start: 2;
     grid-row-end: 3;
     align-self: start;
     max-width: 100%;
+    
     
 }
 .name p{
@@ -234,19 +239,23 @@ Insert Comment
 .important .proj-title:nth-child(1){
     display: block;
 }
-
 .important a:nth-child(1) .proj-title {
+    background-color: #222;
+    background-image: url("pictures/cinema.jpeg");
+}
+
+.important a:nth-child(2) .proj-title {
     background-color: #222;
     background-image: url("pictures/form.png");
 }
 
-.important a:nth-child(2) .proj-title {
+.important a:nth-child(3) .proj-title {
     background-image: url("pictures/perfectHeart.svg");
     background-size: contain;
     background-position: center;
     display: none;
 }
-.important a:nth-child(3) .proj-title {
+.important a:nth-child(4) .proj-title {
     background-image: url("pictures/weather.png");
     background-size: cover;
     background-position: center;
@@ -350,6 +359,9 @@ Insert Comment
 
 }
 .thought a:nth-child(2) img{
+    display: none;
+}
+.thought a:nth-child(3) img{
     display: none;
 }
 
@@ -526,6 +538,9 @@ footer p{
         display: block;
     }
     .important a:nth-child(3) .proj-title {
+        display: block;
+    }
+    .important a:nth-child(4) .proj-title {
         display: block;
     }
     .important {
