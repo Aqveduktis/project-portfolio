@@ -1,0 +1,173 @@
+/* styling for section projects */
+
+.important{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.important a {
+    width: 80%;
+    text-decoration: none;
+    height: auto;
+    padding-bottom: 1em;
+    
+}
+
+
+
+.proj-title {
+    background-color: #021371;
+    background-image: url("#");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    color: #021371;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.important .proj-title{
+    display: none;
+}
+.important .proj-title:nth-child(1){
+    display: block;
+}
+.important a:nth-child(1) .proj-title {
+    background-color: #222;
+    background-image: url("../pictures/cinema.jpeg");
+}
+
+.important a:nth-child(2) .proj-title {
+    background-color: #222;
+    background-image: url("../pictures/form.png");
+}
+
+.important a:nth-child(3) .proj-title {
+    background-image: url("../pictures/perfectHeart.svg");
+    background-size: contain;
+    background-position: center;
+    display: none;
+}
+.important a:nth-child(4) .proj-title {
+    background-image: url("../pictures/weather.png");
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.proj-title div{
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.important p{
+    color: black;
+    display: inline;
+}
+.proj-title p{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.proj-name {
+    color: #021371;
+    text-transform: uppercase;
+}
+.arrow {
+    color: #021371;
+    text-decoration: underline;
+}
+
+
+.non-important h4{
+   text-align: center;
+   margin: 40px 0px;
+}
+.links {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.links a{
+    padding: 10px 0px;
+   
+    
+}
+.links p{
+    color: black;
+    margin: 10px 0;
+}
+.links span{
+    color: #021371;
+    text-transform: uppercase;
+    font-weight: bold;
+   
+}
+.descp {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+.descp span{
+    
+    text-decoration-color: #021371;
+}
+.tags {
+    color: #2B2E34;
+    font-size: 0.7em;
+    font-family: "Roboto", sans-serif;
+
+}
+.tags span {
+    color: #2B2E34; 
+    background-color: #FDDFE7;
+    padding: 0em 0.5em;
+
+}
+@media screen and (min-width: 576px){
+        .important a:nth-child(1) .proj-title {
+        background-color: blue;
+    }
+    
+    .important a:nth-child(2) .proj-title {
+        display: block;
+    }
+    .important a:nth-child(3) .proj-title {
+        display: block;
+    }
+    .important a:nth-child(4) .proj-title {
+        display: block;
+    }
+    .important {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+
+    .important a{
+        display: block;
+        width: 100%;
+        
+    }
+}
+@media screen and (min-width: 992px){
+    
+}
