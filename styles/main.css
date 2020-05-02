@@ -340,36 +340,7 @@ Insert Comment
 
 }
 
-.thought{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: space-between;
-    
-}
-.thought p{
-    /* margin-bottom: 1em; */
-}
-.thought a {
-    width: 90%;
-    text-decoration: none;
-    color: #2B2E34;
-    margin-bottom: 1em;
 
-}
-.thought a:nth-child(2) img{
-    display: none;
-}
-.thought a:nth-child(3) img{
-    display: none;
-}
-
-.thought img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
 
 .mylist {
     width: 100%;
@@ -625,28 +596,7 @@ footer p{
     } */
     
 
-  
-    .thought {
-        justify-content: space-between;
-    }
-    .thought a {
-        width: 45%;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-    }
-    .thought a:nth-child(2) img{
-        display: block;
-        
-    }
-      .thought a:nth-child(3) img{
-        display: block;
-        
-    }
-         .thought a:nth-child(4) img{
-        display: block;
-        
-    }
+
 
   
   

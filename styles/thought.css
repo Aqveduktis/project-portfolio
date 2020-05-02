@@ -1,0 +1,54 @@
+/* styling for my the section thoughts */
+
+.thought{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.thought a {
+    width: 90%;
+    text-decoration: none;
+    color: #2B2E34;
+    margin-bottom: 1em;
+
+}
+
+
+.thought img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: none;
+}
+.thought a:nth-child(1) img {
+  display: block;
+}
+
+@media screen and (min-width: 576px){
+    
+}
+
+@media screen and (min-width: 992px){
+    .thought a {
+    width: 45%;
+    text-decoration: none;
+    color: #2B2E34;
+    margin-bottom: 1em;
+
+    }
+
+    .thought img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+}
+
+@media screen and (min-width: 1200px){
+    
+}
