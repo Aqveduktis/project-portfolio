@@ -639,6 +639,14 @@ footer p{
         display: block;
         
     }
+      .thought a:nth-child(3) img{
+        display: block;
+        
+    }
+         .thought a:nth-child(4) img{
+        display: block;
+        
+    }
 
   
   
